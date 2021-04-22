@@ -1,11 +1,51 @@
 export const Footer = () => {
   return (
     <footer>
-      <p>
+      <p className="paragraph">
         Un cuento por{' '}
-        <a href="" target="_blank">
+        <a
+          href="https://www.youtube.com/watch?v=wyK7YuwUWsU&ab_channel=TaylorSwiftVEVO"
+          target="_blank"
+        >
           The New Romantics
         </a>
+      </p>
+      <p className="wide-text left-aligned date">
+        Integrantes: Tamara Berrocal (
+        <a href="https://www.instagram.com/tamiberrocal/" target="_blank">
+          @tamiberrocal
+        </a>
+        ), Elizabeth Blanco (
+        <a href="https://www.instagram.com/lizzyblanco_/" target="_blank">
+          @lizzyblanco_
+        </a>
+        ), Camila Godoy (
+        <a href="https://www.instagram.com/camilagod_/" target="_blank">
+          @camilagod_
+        </a>
+        ), Estrella Michelod (
+        <a href="https://www.instagram.com/estremichelod/" target="_blank">
+          @estremichelod
+        </a>
+        ), Natalia Dubicki (
+        <a href="https://www.instagram.com/natidubicki/" target="_blank">
+          @natidubicki
+        </a>
+        )
+      </p>
+      <p className="wide-text left-aligned date">
+        Foto de portada: Mar L' Belardinelli (
+        <a href="https://www.instagram.com/marlbelardinelli/" target="_blank">
+          @marlbelardinelli
+        </a>
+        )
+      </p>
+      <p className="wide-text left-aligned date">
+        Fotos del sitio: Camila Godoy (
+        <a href="https://www.instagram.com/camilagod_/" target="_blank">
+          @camilagod_
+        </a>
+        )
       </p>
     </footer>
   );

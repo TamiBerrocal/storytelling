@@ -3,5 +3,5 @@ export const Hero = () => {
     <div className="hero">
       <img src="cover.jpg" className="cover" />
     </div>
-  )
-}
+  );
+};

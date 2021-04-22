@@ -27,10 +27,10 @@ main {
 
 footer {
   width: 100%;
-  background-color: #e4bc99;
   height: fit-content;
+  background-color: #e4bc99;
+  flex-direction: column;
   padding: 1rem;
-  margin: 0;
 }
 
 h1 {
@@ -45,7 +45,6 @@ h1 {
 
 article {
   width: 75%;
-  background-color: white;
   align-items: flex-start;
   padding: 1.5rem;
   margin: 1rem;
@@ -67,6 +66,7 @@ header,
 main,
 footer {
   align-items: center;
+  margin: 0;
 }
 
 p {
@@ -114,31 +114,39 @@ a:active {
 
 .pink-background {
   background-color: #e4a99e;
-  /* border: 0.25rem solid #e4a99e; */
 }
 
 .green-background {
   background-color: #86a388;
-  /* border: 0.25rem solid #86a388; */
+}
+
+.date {
+  font-size: 0.9rem;
+}
+
+.date,
+.italic {
+  font-style: italic;
+  font-weight: bolder;
 }
 
 .wide-text {
   width: 100%;
 }
 
-.text {
+.photo {
+  object-fit: contain;
+  border: 1rem solid white;
+  border-bottom-width: 5rem;
+}
+
+.text,
+.photo {
   width: 50%;
 }
 
-.wide-text,
-.text {
-  overflow: scroll;
-}
-
-.date {
-  font-size: 0.9rem;
-  font-weight: bolder;
-  font-style: italic;
+.paragraph {
+  margin: 0.5rem;
 }
 
 .right-aligned {
@@ -149,58 +157,54 @@ a:active {
   text-align: left;
 }
 
-.paragraph {
-  margin: 0.5rem;
-}
-
-.italic {
-  font-style: italic;
-  font-weight: bolder;
-}
-
-.photo {
-  width: 50%;
-  height: 500px;
-  object-fit: cover;
-  border: 1rem solid white;
-  border-bottom-width: 5rem;
-  /* box-shadow: 2.5px 2.5px 10px lightgrey; */
-}
-
 .pink-shadow {
-  box-shadow: 2.5px 2.5px 10px #ad847c;
+  box-shadow: 3px 3px 12.5px #b48981;
 }
 
 .green-shadow {
-  box-shadow: 2.5px 2.5px 10px #627563;
+  box-shadow: 3px 3px 12.5px #6b806c;
 }
 
-.wide-text,
-.text,
-.video {
-  height: fit-content;
-  max-height: 100%;
+footer .paragraph {
+  margin: 2rem;
+}
+
+footer .paragraph a {
+  background-color: #ffd545;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+  
   h1 {
     font-size: 2.5rem;
   }
 
-  .wide-text,
-  .text,
-  .photo,
-  .video {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
   article {
-    width: 85%;
-    height: fit-content;
+    width: 90%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    gap: 1rem;
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+  
+  .text,
+  .photo {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .photo {
+    border: 0.75rem solid white;
+    border-bottom-width: 2.75rem;
   }
 }
