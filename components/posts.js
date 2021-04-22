@@ -4,9 +4,11 @@ import { Post } from './post';
 export const Posts = () => {
   return (
     <main>
-      {posts.map((post) => (
-        <Post post={post} />
-      ))}
+      {posts.map((post, i) => {
+        const postId = `post${i}`;
+        return <Post key={postId} id={postId} post={post} />;
+      })}
+
       {/* <article>
         <video
           className="video"

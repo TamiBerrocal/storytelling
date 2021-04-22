@@ -20,18 +20,17 @@ header {
 
 main {
   width: 100%;
-  background-color: white;
+  background-color: #e4bc99;
   flex-direction: column;
   padding: 1rem 0;
 }
 
 footer {
   width: 100%;
-  background-color: white;
+  background-color: #e4bc99;
   height: fit-content;
   padding: 1rem;
   margin: 0;
-  border-top: 1px solid #e4bc99;
 }
 
 h1 {
@@ -46,14 +45,13 @@ h1 {
 
 article {
   width: 75%;
-  height: 500px;
+  background-color: white;
   align-items: flex-start;
   padding: 1.5rem;
   margin: 1rem;
   gap: 1rem;
   text-align: justify;
   text-decoration: none;
-  border: 1px solid #e4bc99;
   border-radius: 7.5px;
 }
 
@@ -114,6 +112,16 @@ a:active {
   align-items: center;
 }
 
+.pink-background {
+  background-color: #e4a99e;
+  /* border: 0.25rem solid #e4a99e; */
+}
+
+.green-background {
+  background-color: #86a388;
+  /* border: 0.25rem solid #86a388; */
+}
+
 .wide-text {
   width: 100%;
 }
@@ -127,14 +135,48 @@ a:active {
   overflow: scroll;
 }
 
+.date {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.right-aligned {
+  text-align: right;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.paragraph {
+  margin: 0.5rem;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: bolder;
+}
+
 .photo {
   width: 50%;
+  height: 500px;
   object-fit: cover;
+  border: 1rem solid white;
+  border-bottom-width: 5rem;
+  /* box-shadow: 2.5px 2.5px 10px lightgrey; */
+}
+
+.pink-shadow {
+  box-shadow: 2.5px 2.5px 10px #ad847c;
+}
+
+.green-shadow {
+  box-shadow: 2.5px 2.5px 10px #627563;
 }
 
 .wide-text,
 .text,
-.photo,
 .video {
   height: fit-content;
   max-height: 100%;
