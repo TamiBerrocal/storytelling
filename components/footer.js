@@ -19,7 +19,7 @@ export const Footer = () => {
         <a href="https://medium.com/@tamaraberrocal" target="_blank">
           @tamaraberrocal
         </a>
-        ), Elizabeth Blanco (
+        ), Lizzy Blanco (
         <a href="https://www.instagram.com/lizzyblanco_/" target="_blank">
           @lizzyblanco_
         </a>{' '}
@@ -32,23 +32,23 @@ export const Footer = () => {
           @camilagod_
         </a>{' '}
         -{' '}
-        <a href="https://www.instagram.com/camilagod_/" target="_blank">
-          @camilagod_
+        <a href="https://medium.com/@camilagod" target="_blank">
+          @camilagod
         </a>
         ), Estrella Michelod (
         <a href="https://www.instagram.com/estremichelod/" target="_blank">
           @estremichelod
         </a>{' '}
         -{' '}
-        <a href="https://www.instagram.com/estremichelod/" target="_blank">
-          @estremichelod
+        <a href="https://emichelod.medium.com/" target="_blank">
+          @emichelod
         </a>
         ), Nati Dubicki (
         <a href="https://www.instagram.com/natidubicki/" target="_blank">
           @natidubicki
         </a>{' '}
         -{' '}
-        <a href="https://www.instagram.com/natidubicki/" target="_blank">
+        <a href="https://natidubicki.medium.com/" target="_blank">
           @natidubicki
         </a>
         )
