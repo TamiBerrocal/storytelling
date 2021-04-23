@@ -8,6 +8,7 @@ export default function Home() {
       </Head>
 
       <div className="header">
+        <img src="juliamood.jpg" className="moodboard" />
         <img src="astridmood.jpg" className="moodboard" />
       </div>
     </div>

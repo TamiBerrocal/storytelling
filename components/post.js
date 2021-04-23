@@ -1,11 +1,26 @@
 import { isObject } from 'lodash';
 
+const displayElement = (element, i) => {
+  return element.text ? (
+    <p key={`paragraph${i}`} className={`paragraph ${element.style}`}>
+      {element.text}
+    </p>
+  ) : (
+    <audio key={`audio${i}`} controls>
+      <source key={`audio${i}`} src={element.audio} type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  );
+};
+
 const displayContent = (content) =>
-  content.map((paragraph, i) => {
-    return isObject(paragraph) ? (
-      <p key={`paragraph${i}`} className={`paragraph ${paragraph.style}`}>{paragraph.text}</p>
+  content.map((element, i) => {
+    return isObject(element) ? (
+      displayElement(element, i)
     ) : (
-      <p key={`paragraph${i}`} className="paragraph">{paragraph}</p>
+      <p key={`paragraph${i}`} className="paragraph">
+        {element}
+      </p>
     );
   });
 

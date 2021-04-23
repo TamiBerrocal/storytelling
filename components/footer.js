@@ -22,10 +22,6 @@ export const Footer = () => {
         ), Lizzy Blanco (
         <a href="https://www.instagram.com/lizzyblanco_/" target="_blank">
           @lizzyblanco_
-        </a>{' '}
-        -{' '}
-        <a href="https://www.instagram.com/lizzyblanco_/" target="_blank">
-          @lizzyblanco_
         </a>
         ), Camila Godoy (
         <a href="https://www.instagram.com/camilagod_/" target="_blank">
