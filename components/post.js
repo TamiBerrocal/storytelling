@@ -1,11 +1,11 @@
 import { isObject } from 'lodash';
 
 const displayContent = (content) =>
-  content.map((paragraph) => {
+  content.map((paragraph, i) => {
     return isObject(paragraph) ? (
-      <p className={`paragraph ${paragraph.style}`}>{paragraph.text}</p>
+      <p key={`paragraph${i}`} className={`paragraph ${paragraph.style}`}>{paragraph.text}</p>
     ) : (
-      <p className="paragraph">{paragraph}</p>
+      <p key={`paragraph${i}`} className="paragraph">{paragraph}</p>
     );
   });
 
@@ -20,8 +20,8 @@ export const Post = ({ id, post }) => {
       >
         {photos && (
           <div className="photo-container">
-            {photos.map((photo) => (
-              <img className="photo pink-shadow" src={photo} />
+            {photos.map((photo, i) => (
+              <img key={`img${i}`} className="photo pink-shadow" src={photo} />
             ))}
           </div>
         )}
@@ -42,8 +42,8 @@ export const Post = ({ id, post }) => {
         </p>
         {photos && (
           <div className="photo-container">
-            {photos.map((photo) => (
-              <img className="photo green-shadow" src={photo} />
+            {photos.map((photo, i) => (
+              <img key={`img${i}`} className="photo green-shadow" src={photo} />
             ))}
           </div>
         )}

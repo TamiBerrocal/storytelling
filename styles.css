@@ -155,6 +155,8 @@ a:active {
 
 .photo {
   width: 100%;
+  height: fit-content;
+  margin: 0.5rem;
   object-fit: cover;
   border: 1rem solid white;
   border-bottom-width: 5rem;
