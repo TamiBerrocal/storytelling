@@ -10,12 +10,21 @@ const displayContent = (content) =>
   });
 
 export const Post = ({ id, post }) => {
-  const { date, photo, content, author } = post;
+  const { date, photos, content, author } = post;
 
   const postType = {
     J: (
-      <article key={id} className="pink-background">
-        <img className="photo pink-shadow" src={photo} />
+      <article
+        key={id}
+        className={`pink-background ${!photos ? 'flex-right' : ''}`}
+      >
+        {photos && (
+          <div className="photo-container">
+            {photos.map((photo) => (
+              <img className="photo pink-shadow" src={photo} />
+            ))}
+          </div>
+        )}
         <p className="text">
           <p className="date right-aligned">{date}</p>
           {displayContent(content)}
@@ -23,12 +32,21 @@ export const Post = ({ id, post }) => {
       </article>
     ),
     A: (
-      <article key={id} className="green-background">
+      <article
+        key={id}
+        className={`green-background ${!photos ? 'flex-left' : ''}`}
+      >
         <p className="text">
           <p className="date left-aligned">{date}</p>
           {displayContent(content)}
         </p>
-        <img className="photo green-shadow" src={photo} />
+        {photos && (
+          <div className="photo-container">
+            {photos.map((photo) => (
+              <img className="photo green-shadow" src={photo} />
+            ))}
+          </div>
+        )}
       </article>
     ),
   };

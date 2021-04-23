@@ -11,23 +11,43 @@ export const Footer = () => {
         </a>
       </p>
       <p className="wide-text left-aligned date">
-        Integrantes: Tamara Berrocal (
+        Integrantes: Tami Berrocal (
         <a href="https://www.instagram.com/tamiberrocal/" target="_blank">
           @tamiberrocal
+        </a>{' '}
+        -{' '}
+        <a href="https://medium.com/@tamaraberrocal" target="_blank">
+          @tamaraberrocal
         </a>
         ), Elizabeth Blanco (
+        <a href="https://www.instagram.com/lizzyblanco_/" target="_blank">
+          @lizzyblanco_
+        </a>{' '}
+        -{' '}
         <a href="https://www.instagram.com/lizzyblanco_/" target="_blank">
           @lizzyblanco_
         </a>
         ), Camila Godoy (
         <a href="https://www.instagram.com/camilagod_/" target="_blank">
           @camilagod_
+        </a>{' '}
+        -{' '}
+        <a href="https://www.instagram.com/camilagod_/" target="_blank">
+          @camilagod_
         </a>
         ), Estrella Michelod (
         <a href="https://www.instagram.com/estremichelod/" target="_blank">
           @estremichelod
+        </a>{' '}
+        -{' '}
+        <a href="https://www.instagram.com/estremichelod/" target="_blank">
+          @estremichelod
         </a>
-        ), Natalia Dubicki (
+        ), Nati Dubicki (
+        <a href="https://www.instagram.com/natidubicki/" target="_blank">
+          @natidubicki
+        </a>{' '}
+        -{' '}
         <a href="https://www.instagram.com/natidubicki/" target="_blank">
           @natidubicki
         </a>
