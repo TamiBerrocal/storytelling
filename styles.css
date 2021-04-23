@@ -43,6 +43,26 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  padding: 0;
+  margin: 0;
+  font-family: 'DM Serif Display', serif;
+  color: #ffd545;
+  font-size: 4rem;
+  line-height: 0.75em;
+  text-align: center;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  font-family: 'DM Serif Display', serif;
+  color: black;
+  font-size: 2.5rem;
+  line-height: 0.75em;
+  text-align: center;
+}
+
 article {
   width: 75%;
   align-items: flex-start;
@@ -142,7 +162,7 @@ a:active {
   width: 100%;
 }
 
-.photo-container {
+.column-container {
   width: 50%;
   padding: 0;
   margin: 0;
@@ -195,6 +215,55 @@ footer .paragraph a {
   text-decoration: none;
 }
 
+.moodboard {
+  width: 100%;
+  max-height: 100vh;
+  padding: 0;
+  margin: 0;
+  object-fit: contain;
+  /* object-fit: cover; */
+}
+
+.row-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.pink-text-shadow {
+  text-shadow: 3px 3px 7.5px #b48981;
+}
+
+.green-text-shadow {
+  text-shadow: 3px 3px 7.5px #6b806c;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.fixed-footer a:hover,
+.fixed-footer a:focus,
+.fixed-footer a:active {
+  background-color: #ffd545;
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 1rem;
@@ -202,6 +271,14 @@ footer .paragraph a {
 
   h1 {
     font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
   }
 
   article {

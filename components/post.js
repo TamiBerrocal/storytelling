@@ -19,7 +19,7 @@ export const Post = ({ id, post }) => {
         className={`pink-background ${!photos ? 'flex-right' : ''}`}
       >
         {photos && (
-          <div className="photo-container">
+          <div className="column-container">
             {photos.map((photo, i) => (
               <img key={`img${i}`} className="photo pink-shadow" src={photo} />
             ))}
@@ -41,7 +41,7 @@ export const Post = ({ id, post }) => {
           {displayContent(content)}
         </p>
         {photos && (
-          <div className="photo-container">
+          <div className="column-container">
             {photos.map((photo, i) => (
               <img key={`img${i}`} className="photo green-shadow" src={photo} />
             ))}
