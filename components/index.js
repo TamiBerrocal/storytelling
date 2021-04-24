@@ -4,3 +4,4 @@ export { Header } from './header';
 export { Hero } from './hero';
 export { Navigation } from './navigation';
 export { Posts } from './posts';
+export { Video } from './video';

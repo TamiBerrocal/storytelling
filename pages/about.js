@@ -7,9 +7,12 @@ export default function Home() {
         <title>Maneras de no querer a tu hermana</title>
       </Head>
 
-      <div className="header">
+      <div>
         <img src="juliamood.jpg" className="moodboard" />
         <img src="astridmood.jpg" className="moodboard" />
+        <img src="julia-1.jpg" className="moodboard" />
+        <img src="astrid-1.jpg" className="moodboard" />
+        <img src="paleta-colores.png" className="palette" />
       </div>
     </div>
   );

@@ -6,10 +6,12 @@ const displayElement = (element, i) => {
       {element.text}
     </p>
   ) : (
-    <audio key={`audio${i}`} controls>
-      <source key={`audio${i}`} src={element.audio} type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+    <div className="audio-container">
+      <audio key={`audio${i}`} controls controlsList="nodownload">
+        <source key={`audio${i}`} src={element.audio} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
   );
 };
 
